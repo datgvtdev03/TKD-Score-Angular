@@ -13,13 +13,18 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DisplaySnakeComponent } from './pages/display-snake/display-snake.component';
+import { TestCountWssComponent } from './pages/test-count-wss/test-count-wss.component';
+
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    SnakeComponent
+    SnakeComponent,
+    DisplaySnakeComponent,
+    TestCountWssComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,7 @@ registerLocaleData(en);
     NzButtonModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
